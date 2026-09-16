@@ -91,13 +91,14 @@
 \title{PyPSA -- an open-source Power Modelling Tool}
 \subtitle{The Power of Many: Open Source for Critical Infrastructure}
 
-\author{Michael Lindner$^{*}$ and Iegor Riepin$^{*,**}$}
+\author{Michael Lindner$^{*}$ and Iegor Riepin$^{*,\triangle}$}
 
 \institute[Technische Universität Berlin] % (optional, but mostly needed)
 {
   \footnotesize
 	$^{*}$Postdoc researcher at ENSYS group, TU Berlin \\
-	$^{**}$PyPSA Labs \\
+	$^{\triangle}$PyPSA Labs \\
+	\vspace{0.3cm}
   \alert{50Hertz The Summit --- Ensuring Grid Stability for Tomorrow} --- 17 September 2026
 }
 
@@ -132,16 +133,18 @@
 	\end{frame}
 
 }
-
+\section{The PyPSA Ecosystem}
 \begin{frame}{The PyPSA Ecosystem}
 \begin{columns}[T,onlytextwidth]
 \begin{column}{0.31\textwidth}
 \centering
+\visible<2->{%
 \includegraphics[width=0.82\linewidth,height=2cm,keepaspectratio]{graphics/50-hertz-summit/atlite.png}
 
 \small\textbf{Atlite}
 
 \scriptsize A lightweight Python package for calculating renewable power potentials and time series.
+}
 \end{column}
 \begin{column}{0.31\textwidth}
 \centering
@@ -153,11 +156,13 @@
 \end{column}
 \begin{column}{0.31\textwidth}
 \centering
+\visible<2->{%
 \includegraphics[width=0.82\linewidth,height=2cm,keepaspectratio]{graphics/50-hertz-summit/linopy.png}
 
 \small\textbf{Linopy}
 
 \scriptsize Linear optimization interface for N-D labeled variables.
+}
 \end{column}
 \end{columns}
 
@@ -166,27 +171,33 @@
 \begin{columns}[T,onlytextwidth]
 \begin{column}{0.31\textwidth}
 \centering
+\visible<2->{%
 \includegraphics[width=0.82\linewidth,height=2cm,keepaspectratio]{graphics/50-hertz-summit/mapyourgrid.png}
 
 \small\textbf{Map Your Grid}
 
 \scriptsize Community-driven initiative mapping the world's electrical grids to accelerate the energy transition worldwide.
+}
 \end{column}
 \begin{column}{0.31\textwidth}
 \centering
+\visible<2->{%
 \includegraphics[width=0.82\linewidth,height=2cm,keepaspectratio]{graphics/50-hertz-summit/powerplantmatching.png}
 
 \small\textbf{Powerplantmatching}
 
 \scriptsize A toolset for cleaning, standardizing and combining multiple power plant databases.
+}
 \end{column}
 \begin{column}{0.31\textwidth}
 \centering
+\visible<2->{%
 \includegraphics[width=0.82\linewidth,height=2cm,keepaspectratio]{graphics/50-hertz-summit/technology-data.png}
 
 \small\textbf{Technology Data}
 
 \scriptsize Compile assumptions on energy system technologies for various years.
+}
 \end{column}
 \end{columns}
 
@@ -194,8 +205,7 @@
 \end{frame}
 
 \begin{frame}{Some PyPSA Models}
-\begin{columns}[T,onlytextwidth]
-\begin{column}{0.32\textwidth}
+\begin{textblock*}{4.3cm}(1.0cm,2.05cm)
 \centering
 \begin{minipage}[t][4cm][b]{\linewidth}
 \centering
@@ -206,8 +216,8 @@
 \small\textbf{PyPSA-DE}
 
 \scriptsize High resolution, sector-coupled model of the German Energy System.
-\end{column}
-\begin{column}{0.32\textwidth}
+\end{textblock*}
+\begin{textblock*}{4.3cm}(5.85cm,2.05cm)
 \centering
 \begin{minipage}[t][4cm][b]{\linewidth}
 \centering
@@ -218,8 +228,8 @@
 \small\textbf{PyPSA-Eur}
 
 \scriptsize A sector-coupled open optimisation model of the European Energy System.
-\end{column}
-\begin{column}{0.32\textwidth}
+\end{textblock*}
+\begin{textblock*}{4.3cm}(10.7cm,2.05cm)
 \centering
 \begin{minipage}[t][4cm][b]{\linewidth}
 \centering
@@ -230,31 +240,15 @@
 \small\textbf{PyPSA-Earth}
 
 \scriptsize A flexible open optimisation model to study energy system futures around the world.
-\end{column}
-\end{columns}
+\end{textblock*}
 
 \source{\url{https://pypsa.org/\#implementations}}
 \end{frame}
 
-
+\section{Open Source for Energy Policy Research}
 \begin{frame}{Our research focus @TUB-ENSYS}
-\begin{columns}[T,onlytextwidth]
-\begin{column}{0.4\textwidth}
-\vspace{0.25cm}
-\small
-\begin{itemize}
-\setlength{\itemsep}{0.12cm}
-\setlength{\leftmargini}{0.55cm}
-\item \textcolor{tub-red}{Cost-effective pathways} to reduce greenhouse gas emissions
-\item \textcolor{tub-red}{Evaluation} of grid expansion, hydrogen strategies, carbon management strategies
-\item \textcolor{tub-red}{Co-optimisation} of generation, storage, conversion and  \textcolor{tub-red}{transmission infrastructure}
-%\item \textcolor{tub-red}{Algorithms} to improve the tractability of models
-\item \textcolor{tub-red}{All open} source and open data
-\end{itemize}
-\end{column}
-\begin{column}{0.29\textwidth}
+\begin{textblock*}{4.3cm}(1.0cm,2.05cm)
 \centering
-\vspace{0.7cm}
 \begin{minipage}[t][4cm][b]{\linewidth}
 \centering
 \includegraphics[height=4cm,keepaspectratio]{graphics/50-hertz-summit/pypsa-de.png}
@@ -263,10 +257,10 @@
 
 \small\textbf{PyPSA-DE}
 
-\end{column}
-\begin{column}{0.29\textwidth}
+\scriptsize High resolution, sector-coupled model of the German Energy System.
+\end{textblock*}
+\begin{textblock*}{4.3cm}(5.85cm,2.05cm)
 \centering
-\vspace{0.7cm}
 \begin{minipage}[t][4cm][b]{\linewidth}
 \centering
 \includegraphics[height=3.2cm,keepaspectratio]{graphics/50-hertz-summit/pypsa-eur.png}
@@ -275,9 +269,30 @@
 
 \small\textbf{PyPSA-Eur}
 
-\end{column}
-\end{columns}
+\scriptsize A sector-coupled open optimisation model of the European Energy System.
+\end{textblock*}
+\begin{textblock*}{5.0cm}(10.35cm,2.05cm)
+\centering
+\begin{minipage}[t][4cm][c]{\linewidth}
+\begin{minipage}{0.92\linewidth}
+\small
+\vspace{1cm}
+\begin{itemize}
+\setlength{\itemsep}{0.12cm}
+\setlength{\leftmargini}{0.42cm}
+\item \textcolor{tub-red}{Cost-effective pathways} to reduce CO$_2$ emissions
+\item \textcolor{tub-red}{Evaluation} of grid expansion, as well as hydrogen and carbon management strategies
+\item \textcolor{tub-red}{Co-optimisation} of generation, storage, conversion and  \textcolor{tub-red}{transmission infrastructure}
+%\item \textcolor{tub-red}{Algorithms} to improve the tractability of models
+\item \textcolor{tub-red}{All open} source and open data
+\end{itemize}
+\end{minipage}
+\end{minipage}
+\end{textblock*}
+
+\source{\url{https://pypsa.org/\#implementations}}
 \end{frame}
+
 
 \begin{frame}{Open Data Spotlight: PyPSA-DE}
 \begin{columns}[c,onlytextwidth]
@@ -307,7 +322,7 @@
 \end{frame}
 
 \begin{frame}{}
-\frametitle{Results Spotlight: PyPSA-DE}
+\frametitle{Results Spotlight: PyPSA-DE in the Ariadne project}
 \begin{columns}[T,onlytextwidth]
 \begin{column}{0.18\textwidth}
 \centering
@@ -316,8 +331,8 @@
 \includegraphics[width=\linewidth,height=3.6cm,keepaspectratio]{graphics/ariadne-scenarios-thumbnail.png}
 \end{minipage}
 
-\footnotesize\textbf{Ariadne scenarios}\par
-% \scriptsize PyPSA-DE in the model comparison for climate neutrality 2045.
+\footnotesize\textbf{Ariadne Report}\par
+\scriptsize Germany on the way to climate neutrality. Scenarios and pathways in model comparison.
 \end{column}
 \begin{column}{0.18\textwidth}
 \centering
@@ -326,8 +341,8 @@
 \includegraphics[width=\linewidth,height=3.6cm,keepaspectratio]{graphics/ariadne-ee2030-thumbnail.png}
 \end{minipage}
 
-\footnotesize\textbf{Ariadne EE targets 2030}\par
-% \scriptsize PyPSA-DE tests the system effects of lower renewable build-out.
+\footnotesize\textbf{Ariadne Report}\par
+\scriptsize Renewable energy targets for Germany in 2030.
 \end{column}
 \begin{column}{0.31\textwidth}
 \centering
@@ -351,17 +366,12 @@
 \end{column}
 \end{columns}
 
-\vspace{0.2cm}
-\begin{columns}[c,onlytextwidth]
-\begin{column}{0.5\textwidth}
-\centering
-\includegraphics[height=0.8cm,keepaspectratio]{graphics/50-hertz-summit/ariadne-logo-color.png}
-\end{column}
-\begin{column}{0.5\textwidth}
-\centering
-\includegraphics[height=2cm,keepaspectratio]{graphics/50-hertz-summit/bmftr-logo.png}
-\end{column}
-\end{columns}
+\begin{textblock*}{3.0cm}(1.0cm,8.05cm)
+\includegraphics[height=0.55cm,keepaspectratio]{graphics/50-hertz-summit/ariadne-logo-color.png}
+\end{textblock*}
+\begin{textblock*}{4.0cm}(3.4cm,7.65cm)
+\includegraphics[height=1.35cm,keepaspectratio]{graphics/50-hertz-summit/bmftr-logo.png}
+\end{textblock*}
 
 \source{Ariadne: \href{https://ariadneprojekt.de/}{ariadneprojekt.de}; Geis et al. (2026): \href{https://doi.org/10.1016/j.eneco.2026.109213}{Energy Economics}, \href{https://doi.org/10.1016/j.adapen.2026.100284}{Adv. Appl. Energy}; logos: Ariadne / BMFTR}
 \end{frame}
@@ -369,17 +379,17 @@
 
 
 \begin{frame}{}
-\frametitle{Results Spotlight: PyPSA-DE}
+\frametitle{Results Spotlight: PyPSA-DE in the Ariadne project}
 \begin{columns}[c,onlytextwidth]
-\begin{column}{0.17\textwidth}
+\begin{column}{0.18\textwidth}
 \centering
 \begin{minipage}[b][3.6cm][b]{\linewidth}
 \centering
 \includegraphics[width=\linewidth,height=3.6cm,keepaspectratio]{graphics/ariadne-scenarios-thumbnail.png}
 \end{minipage}
 
-\footnotesize\textbf{Ariadne scenarios}\par
-% \scriptsize PyPSA-DE in the model comparison for climate neutrality 2045.
+\footnotesize\textbf{Ariadne Report}\par
+\scriptsize Germany on the way to climate neutrality. Scenarios and pathways in model comparison.
 \end{column}
 \begin{column}{0.53\textwidth}
 \centering
@@ -394,7 +404,7 @@
 \end{column}
 \end{columns}
 
-\source{\href{https://ariadneprojekt.de/publikation/report-szenarien-zur-klimaneutralitat-2045/}{Ariadne scenarios}; logos: Ariadne / BMFTR}
+\source{\href{https://ariadneprojekt.de/publikation/report-szenarien-zur-klimaneutralitat-2045/}{Ariadne Scenarios Report}; logos: Ariadne / BMFTR}
 \end{frame}
 
 \section{Open Source for Emergency Situations}
