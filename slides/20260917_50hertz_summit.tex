@@ -88,8 +88,7 @@
 \newcolumntype{R}{>{\rowfonttype}r}
 
 % TITLE PAGE
-\title{PyPSA -- an open-source Power Modelling Tool}
-\subtitle{The Power of Many: Open Source for Critical Infrastructure}
+\title{The Power of Many: Open Source for Critical Infrastructure}
 
 \author{Michael Lindner$^{*}$ and Iegor Riepin$^{*,\triangle}$}
 
@@ -135,276 +134,273 @@
 }
 \section{The PyPSA Ecosystem}
 \begin{frame}{The PyPSA Ecosystem}
-\begin{columns}[T,onlytextwidth]
-\begin{column}{0.31\textwidth}
-\centering
-\visible<2->{%
-\includegraphics[width=0.82\linewidth,height=2cm,keepaspectratio]{graphics/50-hertz-summit/atlite.png}
+	\begin{columns}[T,onlytextwidth]
+		\begin{column}{0.31\textwidth}
+			\centering
+			\visible<2->{%
+				\includegraphics[width=0.82\linewidth,height=2cm,keepaspectratio]{graphics/50-hertz-summit/atlite.png}
 
-\small\textbf{Atlite}
+				\small\textbf{Atlite}
 
-\scriptsize A lightweight Python package for calculating renewable power potentials and time series.
-}
-\end{column}
-\begin{column}{0.31\textwidth}
-\centering
-\includegraphics[width=0.82\linewidth,height=2cm,keepaspectratio]{graphics/50-hertz-summit/pypsa-logo.png}
+				\scriptsize A lightweight Python package for calculating renewable power potentials and time series.
+			}
+		\end{column}
+		\begin{column}{0.31\textwidth}
+			\centering
+			\includegraphics[width=0.82\linewidth,height=2cm,keepaspectratio]{graphics/50-hertz-summit/pypsa-logo.png}
 
-\small\textbf{PyPSA}
+			\small\textbf{PyPSA}
 
-\scriptsize Python for Power System Analysis -- the core framework for simulating and optimising modern power systems.
-\end{column}
-\begin{column}{0.31\textwidth}
-\centering
-\visible<2->{%
-\includegraphics[width=0.82\linewidth,height=2cm,keepaspectratio]{graphics/50-hertz-summit/linopy.png}
+			\scriptsize Python for Power System Analysis -- the core framework for simulating and optimising modern power systems.
+		\end{column}
+		\begin{column}{0.31\textwidth}
+			\centering
+			\visible<2->{%
+				\includegraphics[width=0.82\linewidth,height=2cm,keepaspectratio]{graphics/50-hertz-summit/linopy.png}
 
-\small\textbf{Linopy}
+				\small\textbf{Linopy}
 
-\scriptsize Linear optimization interface for N-D labeled variables.
-}
-\end{column}
-\end{columns}
+				\scriptsize Linear optimization interface for N-D labeled variables.
+			}
+		\end{column}
+	\end{columns}
 
-\vspace{0.45cm}
+	\vspace{0.45cm}
 
-\begin{columns}[T,onlytextwidth]
-\begin{column}{0.31\textwidth}
-\centering
-\visible<2->{%
-\includegraphics[width=0.82\linewidth,height=2cm,keepaspectratio]{graphics/50-hertz-summit/mapyourgrid.png}
+	\begin{columns}[T,onlytextwidth]
+		\begin{column}{0.31\textwidth}
+			\centering
+			\visible<2->{%
+				\includegraphics[width=0.82\linewidth,height=2cm,keepaspectratio]{graphics/50-hertz-summit/mapyourgrid.png}
 
-\small\textbf{Map Your Grid}
+				\small\textbf{Map Your Grid}
 
-\scriptsize Community-driven initiative mapping the world's electrical grids to accelerate the energy transition worldwide.
-}
-\end{column}
-\begin{column}{0.31\textwidth}
-\centering
-\visible<2->{%
-\includegraphics[width=0.82\linewidth,height=2cm,keepaspectratio]{graphics/50-hertz-summit/powerplantmatching.png}
+				\scriptsize Community-driven initiative mapping the world's electrical grids to accelerate the energy transition worldwide.
+			}
+		\end{column}
+		\begin{column}{0.31\textwidth}
+			\centering
+			\visible<2->{%
+				\includegraphics[width=0.82\linewidth,height=2cm,keepaspectratio]{graphics/50-hertz-summit/powerplantmatching.png}
 
-\small\textbf{Powerplantmatching}
+				\small\textbf{Powerplantmatching}
 
-\scriptsize A toolset for cleaning, standardizing and combining multiple power plant databases.
-}
-\end{column}
-\begin{column}{0.31\textwidth}
-\centering
-\visible<2->{%
-\includegraphics[width=0.82\linewidth,height=2cm,keepaspectratio]{graphics/50-hertz-summit/technology-data.png}
+				\scriptsize A toolset for cleaning, standardizing and combining multiple power plant databases.
+			}
+		\end{column}
+		\begin{column}{0.31\textwidth}
+			\centering
+			\visible<2->{%
+				\includegraphics[width=0.82\linewidth,height=2cm,keepaspectratio]{graphics/50-hertz-summit/technology-data.png}
 
-\small\textbf{Technology Data}
+				\small\textbf{Technology Data}
 
-\scriptsize Compile assumptions on energy system technologies for various years.
-}
-\end{column}
-\end{columns}
+				\scriptsize Compile assumptions on energy system technologies for various years.
+			}
+		\end{column}
+	\end{columns}
 
-\source{\url{https://pypsa.org/\#frameworks}}
+	\source{\url{https://pypsa.org/\#frameworks}}
 \end{frame}
 
 \begin{frame}{Some PyPSA Models}
-\begin{textblock*}{4.3cm}(1.0cm,2.05cm)
-\centering
-\begin{minipage}[t][4cm][b]{\linewidth}
-\centering
-\includegraphics[height=4cm,keepaspectratio]{graphics/50-hertz-summit/pypsa-de.png}
-\end{minipage}
-\vspace{0.12cm}
+	\begin{textblock*}{4.3cm}(1.0cm,2.05cm)
+		\centering
+		\begin{minipage}[t][4cm][b]{\linewidth}
+			\centering
+			\includegraphics[height=4cm,keepaspectratio]{graphics/50-hertz-summit/pypsa-de.png}
+		\end{minipage}
+		\vspace{0.12cm}
 
-\small\textbf{PyPSA-DE}
+		\small\textbf{PyPSA-DE}
 
-\scriptsize High resolution, sector-coupled model of the German Energy System.
-\end{textblock*}
-\begin{textblock*}{4.3cm}(5.85cm,2.05cm)
-\centering
-\begin{minipage}[t][4cm][b]{\linewidth}
-\centering
-\includegraphics[height=3.2cm,keepaspectratio]{graphics/50-hertz-summit/pypsa-eur.png}
-\end{minipage}
-\vspace{0.12cm}
+		\scriptsize High resolution, sector-coupled model of the German Energy System.
+	\end{textblock*}
+	\begin{textblock*}{4.3cm}(5.85cm,2.05cm)
+		\centering
+		\begin{minipage}[t][4cm][b]{\linewidth}
+			\centering
+			\includegraphics[height=3.2cm,keepaspectratio]{graphics/50-hertz-summit/pypsa-eur.png}
+		\end{minipage}
+		\vspace{0.12cm}
 
-\small\textbf{PyPSA-Eur}
+		\small\textbf{PyPSA-Eur}
 
-\scriptsize A sector-coupled open optimisation model of the European Energy System.
-\end{textblock*}
-\begin{textblock*}{4.3cm}(10.7cm,2.05cm)
-\centering
-\begin{minipage}[t][4cm][b]{\linewidth}
-\centering
-\includegraphics[height=4cm,keepaspectratio]{graphics/50-hertz-summit/pypsa-earth.png}
-\end{minipage}
-\vspace{0.12cm}
+		\scriptsize A sector-coupled open optimisation model of the European Energy System.
+	\end{textblock*}
+	\begin{textblock*}{4.3cm}(10.7cm,2.05cm)
+		\centering
+		\begin{minipage}[t][4cm][b]{\linewidth}
+			\centering
+			\includegraphics[height=4cm,keepaspectratio]{graphics/50-hertz-summit/pypsa-earth.png}
+		\end{minipage}
+		\vspace{0.12cm}
 
-\small\textbf{PyPSA-Earth}
+		\small\textbf{PyPSA-Earth}
 
-\scriptsize A flexible open optimisation model to study energy system futures around the world.
-\end{textblock*}
+		\scriptsize A flexible open optimisation model to study energy system futures around the world.
+	\end{textblock*}
 
-\source{\url{https://pypsa.org/\#implementations}}
+	\source{\url{https://pypsa.org/\#implementations}}
 \end{frame}
 
 \section{Open Source for Energy Policy Research}
 \begin{frame}{Our research focus @TUB-ENSYS}
-\begin{textblock*}{4.3cm}(1.0cm,2.05cm)
-\centering
-\begin{minipage}[t][4cm][b]{\linewidth}
-\centering
-\includegraphics[height=4cm,keepaspectratio]{graphics/50-hertz-summit/pypsa-de.png}
-\end{minipage}
-\vspace{0.12cm}
+	\begin{textblock*}{4.3cm}(1.0cm,2.05cm)
+		\centering
+		\begin{minipage}[t][4cm][b]{\linewidth}
+			\centering
+			\includegraphics[height=4cm,keepaspectratio]{graphics/50-hertz-summit/pypsa-de.png}
+		\end{minipage}
+		\vspace{0.12cm}
 
-\small\textbf{PyPSA-DE}
+		\small\textbf{PyPSA-DE}
 
-\scriptsize High resolution, sector-coupled model of the German Energy System.
-\end{textblock*}
-\begin{textblock*}{4.3cm}(5.85cm,2.05cm)
-\centering
-\begin{minipage}[t][4cm][b]{\linewidth}
-\centering
-\includegraphics[height=3.2cm,keepaspectratio]{graphics/50-hertz-summit/pypsa-eur.png}
-\end{minipage}
-\vspace{0.12cm}
+		\scriptsize High resolution, sector-coupled model of the German Energy System.
+	\end{textblock*}
+	\begin{textblock*}{4.3cm}(5.85cm,2.05cm)
+		\centering
+		\begin{minipage}[t][4cm][b]{\linewidth}
+			\centering
+			\includegraphics[height=3.2cm,keepaspectratio]{graphics/50-hertz-summit/pypsa-eur.png}
+		\end{minipage}
+		\vspace{0.12cm}
 
-\small\textbf{PyPSA-Eur}
+		\small\textbf{PyPSA-Eur}
 
-\scriptsize A sector-coupled open optimisation model of the European Energy System.
-\end{textblock*}
-\begin{textblock*}{5.0cm}(10.35cm,2.05cm)
-\centering
-\begin{minipage}[t][4cm][c]{\linewidth}
-\begin{minipage}{0.92\linewidth}
-\small
-\vspace{1cm}
-\begin{itemize}
-\setlength{\itemsep}{0.12cm}
-\setlength{\leftmargini}{0.42cm}
-\item \textcolor{tub-red}{Cost-effective pathways} to reduce CO$_2$ emissions
-\item \textcolor{tub-red}{Evaluation} of grid expansion, as well as hydrogen and carbon management strategies
-\item \textcolor{tub-red}{Co-optimisation} of generation, storage, conversion and  \textcolor{tub-red}{transmission infrastructure}
-%\item \textcolor{tub-red}{Algorithms} to improve the tractability of models
-\item \textcolor{tub-red}{All open} source and open data
-\end{itemize}
-\end{minipage}
-\end{minipage}
-\end{textblock*}
+		\scriptsize A sector-coupled open optimisation model of the European Energy System.
+	\end{textblock*}
+	\begin{textblock*}{5.0cm}(10.35cm,2.05cm)
+		\centering
+		\begin{minipage}[t][4cm][c]{\linewidth}
+			\begin{minipage}{0.92\linewidth}
+				\small
+				\vspace{1cm}
+				\begin{itemize}
+					\setlength{\itemsep}{0.12cm}
+					\setlength{\leftmargini}{0.42cm}
+					\item \textcolor{tub-red}{Cost-effective pathways} to reduce CO$_2$ emissions
+					\item \textcolor{tub-red}{Evaluation} of grid expansion, as well as hydrogen and carbon management strategies
+					\item \textcolor{tub-red}{Co-optimisation} of generation, storage, conversion and  \textcolor{tub-red}{transmission infrastructure}
+					      %\item \textcolor{tub-red}{Algorithms} to improve the tractability of models
+					\item \textcolor{tub-red}{All open} source and open data
+				\end{itemize}
+			\end{minipage}
+		\end{minipage}
+	\end{textblock*}
 
-\source{\url{https://pypsa.org/\#implementations}}
+	\source{\url{https://pypsa.org/\#implementations}}
 \end{frame}
-
 
 \begin{frame}{Open Data Spotlight: PyPSA-DE}
-\begin{columns}[c,onlytextwidth]
-\begin{column}{0.36\textwidth}
-\centering
-\begin{minipage}[c][5.7cm][c]{\linewidth}
-\centering
-\includegraphics[width=\linewidth,keepaspectratio]{graphics/wasserstoff-kernnetz-fnb-gas.jpg}
-\end{minipage}
-\end{column}
-\begin{column}{0.38\textwidth}
-\centering
-\begin{minipage}[c][5.7cm][c]{\linewidth}
-\centering
-\includegraphics[height=5.7cm,keepaspectratio]{graphics/nep-2023-open-data.jpg}
-\end{minipage}
-\end{column}
-\begin{column}{0.22\textwidth}
-\centering
-\begin{minipage}[c][5.7cm][c]{\linewidth}
-\centering
-\includegraphics[width=\linewidth,keepaspectratio]{graphics/50-hertz-summit/mastr_logo.pdf}
-\end{minipage}
-\end{column}
-\end{columns}
-\source{PyPSA-Eur: \href{https://pypsa-eur.readthedocs.io/en/latest/img/base.png}{open model data}; NEP 2023: \href{https://www.netzentwicklungsplan.de/}{FNB}; MaStR: \href{https://www.marktstammdatenregister.de/}{Bundesnetzagentur}}
+	\begin{columns}[c,onlytextwidth]
+		\begin{column}{0.36\textwidth}
+			\centering
+			\begin{minipage}[c][5.7cm][c]{\linewidth}
+				\centering
+				\includegraphics[width=\linewidth,keepaspectratio]{graphics/wasserstoff-kernnetz-fnb-gas.jpg}
+			\end{minipage}
+		\end{column}
+		\begin{column}{0.38\textwidth}
+			\centering
+			\begin{minipage}[c][5.7cm][c]{\linewidth}
+				\centering
+				\includegraphics[height=5.7cm,keepaspectratio]{graphics/nep-2023-open-data.jpg}
+			\end{minipage}
+		\end{column}
+		\begin{column}{0.22\textwidth}
+			\centering
+			\begin{minipage}[c][5.7cm][c]{\linewidth}
+				\centering
+				\includegraphics[width=\linewidth,keepaspectratio]{graphics/50-hertz-summit/mastr_logo.pdf}
+			\end{minipage}
+		\end{column}
+	\end{columns}
+	\source{PyPSA-Eur: \href{https://pypsa-eur.readthedocs.io/en/latest/img/base.png}{open model data}; NEP 2023: \href{https://www.netzentwicklungsplan.de/}{FNB}; MaStR: \href{https://www.marktstammdatenregister.de/}{Bundesnetzagentur}}
 \end{frame}
 
 \begin{frame}{}
-\frametitle{Results Spotlight: PyPSA-DE in the Ariadne project}
-\begin{columns}[T,onlytextwidth]
-\begin{column}{0.18\textwidth}
-\centering
-\begin{minipage}[b][3.6cm][b]{\linewidth}
-\centering
-\includegraphics[width=\linewidth,height=3.6cm,keepaspectratio]{graphics/ariadne-scenarios-thumbnail.png}
-\end{minipage}
+	\frametitle{Results Spotlight: PyPSA-DE in the Ariadne project}
+	\begin{columns}[T,onlytextwidth]
+		\begin{column}{0.18\textwidth}
+			\centering
+			\begin{minipage}[b][3.6cm][b]{\linewidth}
+				\centering
+				\includegraphics[width=\linewidth,height=3.6cm,keepaspectratio]{graphics/ariadne-scenarios-thumbnail.png}
+			\end{minipage}
 
-\footnotesize\textbf{Ariadne Report}\par
-\scriptsize Germany on the way to climate neutrality. Scenarios and pathways in model comparison.
-\end{column}
-\begin{column}{0.18\textwidth}
-\centering
-\begin{minipage}[b][3.6cm][b]{\linewidth}
-\centering
-\includegraphics[width=\linewidth,height=3.6cm,keepaspectratio]{graphics/ariadne-ee2030-thumbnail.png}
-\end{minipage}
+			\footnotesize\textbf{Ariadne Report}\par
+			\scriptsize Germany on the way to climate neutrality. Scenarios and pathways in model comparison.
+		\end{column}
+		\begin{column}{0.18\textwidth}
+			\centering
+			\begin{minipage}[b][3.6cm][b]{\linewidth}
+				\centering
+				\includegraphics[width=\linewidth,height=3.6cm,keepaspectratio]{graphics/ariadne-ee2030-thumbnail.png}
+			\end{minipage}
 
-\footnotesize\textbf{Ariadne Report}\par
-\scriptsize Renewable energy targets for Germany in 2030.
-\end{column}
-\begin{column}{0.31\textwidth}
-\centering
-\begin{minipage}[b][3.6cm][b]{\linewidth}
-\centering
-\includegraphics[width=\linewidth,height=3.6cm,keepaspectratio]{graphics/50-hertz-summit/pypsa-de-EE-publication.png}
-\end{minipage}
+			\footnotesize\textbf{Ariadne Report}\par
+			\scriptsize Renewable energy targets for Germany in 2030.
+		\end{column}
+		\begin{column}{0.31\textwidth}
+			\centering
+			\begin{minipage}[b][3.6cm][b]{\linewidth}
+				\centering
+				\includegraphics[width=\linewidth,height=3.6cm,keepaspectratio]{graphics/50-hertz-summit/pypsa-de-EE-publication.png}
+			\end{minipage}
 
-\footnotesize\textbf{Energy Economics}\par
-\scriptsize Price formation in a highly-renewable, sector-coupled energy system.
-\end{column}
-\begin{column}{0.29\textwidth}
-\centering
-\begin{minipage}[b][3.6cm][b]{\linewidth}
-\centering
-\includegraphics[width=\linewidth,height=3.6cm,keepaspectratio]{graphics/50-hertz-summit/pypsa-de-AiPA-publication.png}
-\end{minipage}
+			\footnotesize\textbf{Energy Economics}\par
+			\scriptsize Price formation in a highly-renewable, sector-coupled energy system.
+		\end{column}
+		\begin{column}{0.29\textwidth}
+			\centering
+			\begin{minipage}[b][3.6cm][b]{\linewidth}
+				\centering
+				\includegraphics[width=\linewidth,height=3.6cm,keepaspectratio]{graphics/50-hertz-summit/pypsa-de-AiPA-publication.png}
+			\end{minipage}
 
-\footnotesize\textbf{Advances in Applied Energy}\par
-\scriptsize Managing the mismatch: the role of flexibility on the path to a carbon-neutral energy system.
-\end{column}
-\end{columns}
+			\footnotesize\textbf{Advances in Applied Energy}\par
+			\scriptsize Managing the mismatch: the role of flexibility on the path to a carbon-neutral energy system.
+		\end{column}
+	\end{columns}
 
-\begin{textblock*}{3.0cm}(1.0cm,8.05cm)
-\includegraphics[height=0.55cm,keepaspectratio]{graphics/50-hertz-summit/ariadne-logo-color.png}
-\end{textblock*}
-\begin{textblock*}{4.0cm}(3.4cm,7.65cm)
-\includegraphics[height=1.35cm,keepaspectratio]{graphics/50-hertz-summit/bmftr-logo.png}
-\end{textblock*}
+	\begin{textblock*}{3.0cm}(1.0cm,8.05cm)
+		\includegraphics[height=0.55cm,keepaspectratio]{graphics/50-hertz-summit/ariadne-logo-color.png}
+	\end{textblock*}
+	\begin{textblock*}{4.0cm}(3.4cm,7.65cm)
+		\includegraphics[height=1.35cm,keepaspectratio]{graphics/50-hertz-summit/bmftr-logo.png}
+	\end{textblock*}
 
-\source{Ariadne: \href{https://ariadneprojekt.de/}{ariadneprojekt.de}; Geis et al. (2026): \href{https://doi.org/10.1016/j.eneco.2026.109213}{Energy Economics}, \href{https://doi.org/10.1016/j.adapen.2026.100284}{Adv. Appl. Energy}; logos: Ariadne / BMFTR}
+	\source{Ariadne: \href{https://ariadneprojekt.de/}{ariadneprojekt.de}; Geis et al. (2026): \href{https://doi.org/10.1016/j.eneco.2026.109213}{Energy Economics}, \href{https://doi.org/10.1016/j.adapen.2026.100284}{Adv. Appl. Energy}; logos: Ariadne / BMFTR}
 \end{frame}
 
-
-
 \begin{frame}{}
-\frametitle{Results Spotlight: PyPSA-DE in the Ariadne project}
-\begin{columns}[c,onlytextwidth]
-\begin{column}{0.18\textwidth}
-\centering
-\begin{minipage}[b][3.6cm][b]{\linewidth}
-\centering
-\includegraphics[width=\linewidth,height=3.6cm,keepaspectratio]{graphics/ariadne-scenarios-thumbnail.png}
-\end{minipage}
+	\frametitle{Results Spotlight: PyPSA-DE in the Ariadne project}
+	\begin{columns}[c,onlytextwidth]
+		\begin{column}{0.18\textwidth}
+			\centering
+			\begin{minipage}[b][3.6cm][b]{\linewidth}
+				\centering
+				\includegraphics[width=\linewidth,height=3.6cm,keepaspectratio]{graphics/ariadne-scenarios-thumbnail.png}
+			\end{minipage}
 
-\footnotesize\textbf{Ariadne Report}\par
-\scriptsize Germany on the way to climate neutrality. Scenarios and pathways in model comparison.
-\end{column}
-\begin{column}{0.53\textwidth}
-\centering
-\includegraphics[width=0.96\linewidth,height=0.76\textheight,keepaspectratio]{graphics/50-hertz-summit/elec-cap-DE-2045.png}
-\end{column}
-\begin{column}{0.23\textwidth}
-\centering
-\includegraphics[width=0.95\linewidth,keepaspectratio]{graphics/50-hertz-summit/ariadne-logo-color.png}
+			\footnotesize\textbf{Ariadne Report}\par
+			\scriptsize Germany on the way to climate neutrality. Scenarios and pathways in model comparison.
+		\end{column}
+		\begin{column}{0.53\textwidth}
+			\centering
+			\includegraphics[width=0.96\linewidth,height=0.76\textheight,keepaspectratio]{graphics/50-hertz-summit/elec-cap-DE-2045.png}
+		\end{column}
+		\begin{column}{0.23\textwidth}
+			\centering
+			\includegraphics[width=0.95\linewidth,keepaspectratio]{graphics/50-hertz-summit/ariadne-logo-color.png}
 
-\vspace{0.55cm}
-\includegraphics[height=2.25cm,keepaspectratio]{graphics/50-hertz-summit/bmftr-logo.png}
-\end{column}
-\end{columns}
+			\vspace{0.55cm}
+			\includegraphics[height=2.25cm,keepaspectratio]{graphics/50-hertz-summit/bmftr-logo.png}
+		\end{column}
+	\end{columns}
 
-\source{\href{https://ariadneprojekt.de/publikation/report-szenarien-zur-klimaneutralitat-2045/}{Ariadne Scenarios Report}; logos: Ariadne / BMFTR}
+	\source{\href{https://ariadneprojekt.de/publikation/report-szenarien-zur-klimaneutralitat-2045/}{Ariadne Scenarios Report}; logos: Ariadne / BMFTR}
 \end{frame}
 
 \section{Open Source for Emergency Situations}
@@ -564,37 +560,37 @@
 \end{frame}
 
 \begin{frame}{}
-\frametitle{OPEN Data Spotlight: Electricity}
-\begin{columns}[T,onlytextwidth]
-\begin{column}{0.46\textwidth}
-\includegraphics[width=\linewidth,height=0.76\textheight,keepaspectratio]{graphics/pypsa-eur-open-data.jpg}
-\end{column}
-\begin{column}{0.50\textwidth}
-\includegraphics[width=\linewidth,height=0.76\textheight,keepaspectratio]{graphics/nep-2023-open-data.jpg}
-\vspace{0.25cm}
-\hfill
-\includegraphics[width=0.38\linewidth,keepaspectratio]{graphics/50-hertz-summit/mastr_logo.pdf}
-\end{column}
-\end{columns}
-\source{PyPSA-Eur: \href{https://pypsa-eur.readthedocs.io/en/latest/img/base.png}{open model data}; NEP 2023: \href{https://www.netzentwicklungsplan.de/}{FNB}; MaStR: \href{https://www.marktstammdatenregister.de/}{Bundesnetzagentur}}
+	\frametitle{OPEN Data Spotlight: Electricity}
+	\begin{columns}[T,onlytextwidth]
+		\begin{column}{0.46\textwidth}
+			\includegraphics[width=\linewidth,height=0.76\textheight,keepaspectratio]{graphics/pypsa-eur-open-data.jpg}
+		\end{column}
+		\begin{column}{0.50\textwidth}
+			\includegraphics[width=\linewidth,height=0.76\textheight,keepaspectratio]{graphics/nep-2023-open-data.jpg}
+			\vspace{0.25cm}
+			\hfill
+			\includegraphics[width=0.38\linewidth,keepaspectratio]{graphics/50-hertz-summit/mastr_logo.pdf}
+		\end{column}
+	\end{columns}
+	\source{PyPSA-Eur: \href{https://pypsa-eur.readthedocs.io/en/latest/img/base.png}{open model data}; NEP 2023: \href{https://www.netzentwicklungsplan.de/}{FNB}; MaStR: \href{https://www.marktstammdatenregister.de/}{Bundesnetzagentur}}
 \end{frame}
 
 \begin{frame}{}
-\frametitle{OPEN Data Spotlight: Hydrogen}
-\begin{columns}[T,onlytextwidth]
-\begin{column}{0.34\textwidth}
-\includegraphics[width=\linewidth,height=0.74\textheight,keepaspectratio]{graphics/hotmaps.png}
-\end{column}
-\begin{column}{0.30\textwidth}
-\includegraphics[width=\linewidth,height=0.74\textheight,keepaspectratio]{graphics/caglayan_caverns.png}
-\vspace{0.1cm}
-\includegraphics[width=\linewidth,height=0.14\textheight,keepaspectratio]{graphics/caglayan_caverns_legend.png}
-\end{column}
-\begin{column}{0.40\textwidth}
-\includegraphics[width=\linewidth,height=0.74\textheight,keepaspectratio]{graphics/wasserstoff-kernnetz-fnb-gas.jpg}
-\end{column}
-\end{columns}
-\source{Industrial sites: Hotmaps / PyPSA-Eur; caverns: Caglayan et al. (2020); hydrogen network: \href{https://fnb-gas.de/wasserstofftransport/}{FNB Gas Wasserstoff-Kernnetz}}
+	\frametitle{OPEN Data Spotlight: Hydrogen}
+	\begin{columns}[T,onlytextwidth]
+		\begin{column}{0.34\textwidth}
+			\includegraphics[width=\linewidth,height=0.74\textheight,keepaspectratio]{graphics/hotmaps.png}
+		\end{column}
+		\begin{column}{0.30\textwidth}
+			\includegraphics[width=\linewidth,height=0.74\textheight,keepaspectratio]{graphics/caglayan_caverns.png}
+			\vspace{0.1cm}
+			\includegraphics[width=\linewidth,height=0.14\textheight,keepaspectratio]{graphics/caglayan_caverns_legend.png}
+		\end{column}
+		\begin{column}{0.40\textwidth}
+			\includegraphics[width=\linewidth,height=0.74\textheight,keepaspectratio]{graphics/wasserstoff-kernnetz-fnb-gas.jpg}
+		\end{column}
+	\end{columns}
+	\source{Industrial sites: Hotmaps / PyPSA-Eur; caverns: Caglayan et al. (2020); hydrogen network: \href{https://fnb-gas.de/wasserstofftransport/}{FNB Gas Wasserstoff-Kernnetz}}
 \end{frame}
 
 \end{document}
